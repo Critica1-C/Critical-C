@@ -14,7 +14,7 @@ function NavBar() {
                 <NavbarTitle onClick={() => history.push("/")}>
                     <p>여러분의 <span>쓰</span>레기 <span>랭</span>킹을 매겨드립니다</p>
                     
-                <NavbarGomFace src='https://ssraeng.blob.core.windows.net/etc/sunglassgom.jpeg' onClick={() => history.push("/")}/>
+                <NavbarGomFace src='/images/sunglasses.png' onClick={() => history.push("/")}/>
                 </NavbarTitle>
                 
                 <NavbarMenuWrapper >

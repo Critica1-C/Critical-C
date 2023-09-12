@@ -3,15 +3,15 @@ import { GradeWrapper } from '../styled_components/GradeStyle';
 
 function Grade({data}) {
     const color=["red","orange","yellow","#87F717","green"]
-    const [tierImage, setTierImage] = useState('https://ssraeng.blob.core.windows.net/tier/grade_1.png');
+    const [tierImage, setTierImage] = useState("/images/grade_1.png");
     const [score, setScore] = useState('?');
     const [ranking, setRanking] = useState('?');
     const [tier, setTier] = useState(5);
-    const imageArray = ['https://ssraeng.blob.core.windows.net/tier/grade_1.png',
-                        'https://ssraeng.blob.core.windows.net/tier/grade_2.png',
-                        'https://ssraeng.blob.core.windows.net/tier/grade_3.png',
-                        'https://ssraeng.blob.core.windows.net/tier/grade_4.png',
-                        'https://ssraeng.blob.core.windows.net/tier/grade_5.png'];
+    const imageArray = ['/images/grade_1.png',
+                        '/images/grade_2.png',
+                        '/images/grade_3.png',
+                        '/images/grade_4.png',
+                        '/images/grade_5.png'];
     
 
     useEffect(()=>{

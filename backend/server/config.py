@@ -1,6 +1,15 @@
-from secret import db_pw, secret_key
+import os
 
-SQLALCHEMY_DATABASE_URI = 'mssql+pymssql://ssraeng:'+db_pw+'@ssraeng-db-server.database.windows.net/SsraengDB'
-SQLALCHEMY_TRACK_MODIFICATIONS = False
+BASE_DIR = os.path.dirname(__file__)
 
-SECRET_KEY = secret_key
+aws_db = {
+    "user": "admin",
+    "password": "criticalc",
+    "host": "database-3.cxbibmlxmmra.us-west-2.rds.amazonaws.com",
+    "port": "3306",
+    "database": "mac",
+}
+
+SQLALCHEMY_DATABASE_URI = f"mysql+pymysql://{aws_db['user']}:{aws_db['password']}@{aws_db['host']}:{aws_db['port']}/{aws_db['database']}?charset=utf8"
+SQLALCHEMY_TRACK_MODIFICATIONS = 1
+secret_key = "asdasdasdasd"

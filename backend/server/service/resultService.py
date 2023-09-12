@@ -20,11 +20,11 @@ def get_result(user_id):
   quiz_score = result_data.quiz_score
   final_score = quiz_score*10 - 3*delivery_count*(delivery_count+1)/2
   user_name = user_data.name
-  tier_url = {1: 'https://ssraeng.blob.core.windows.net/tier/grade_1.png',
-              2: 'https://ssraeng.blob.core.windows.net/tier/grade_2.png',
-              3: 'https://ssraeng.blob.core.windows.net/tier/grade_3.png',
-              4: 'https://ssraeng.blob.core.windows.net/tier/grade_4.png',
-              5: 'https://ssraeng.blob.core.windows.net/tier/grade_5.png'}
+  tier_url = {1: '/images/grade_1.png',
+              2: '/images/grade_2.png',
+              3: '/images/grade_3.png',
+              4: '/images/grade_4.png',
+              5: '/images/grade_5.png'}
   
   rank_info = {90: 5, 80: 4, 50:3, 20:2}
   tier = 0

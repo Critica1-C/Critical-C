@@ -40,7 +40,7 @@ function RankingPage({match}) {
             
             <RankPageTitle> 
                 <span>우리집 누가 치웠어?</span>
-                <img src="https://ssraeng.blob.core.windows.net/etc/ciderbear.png" alt="그림 수리중"/>
+                <img src="/images/sad_bear.png" alt="그림 수리중"/>
             </RankPageTitle>
             <RankWrapper style={{display:"flex", justifyContent:"space-evenly"}}>    
                 <RankElement width={2}>순위</RankElement>
