@@ -38,19 +38,6 @@ spec:
       volumes:
         - name: applog
           emptyDir: {}
-      affinity:
-        podAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-            - weight: 90
-              podAffinityTerm:
-                labelSelector:
-                  matchExpressions:
-                    - key: tier
-                      operator: In
-                      values:
-                        - back
-                topologyKey: "kubernetes.io/hostname"
-
 ---
 apiVersion: v1
 kind: Service
@@ -102,21 +89,7 @@ spec:
                 name: trash-back-svc
                 port:
                   number: 80
-          - path: /api/user
-            pathType: Prefix
-            backend:
-              service:
-                name: trash-back-svc
-                port:
-                  number: 80
-          - path: /api/ranking
-            pathType: Prefix
-            backend:
-              service:
-                name: trash-back-svc
-                port:
-                  number: 80
-          - path: /result
+          - path: /api/
             pathType: Prefix
             backend:
               service:
