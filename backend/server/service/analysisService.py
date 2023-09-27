@@ -1,11 +1,7 @@
-from flask.json import jsonify
-from datetime import datetime
-
 from domain.dao.userDao import new_user
 from domain.dao.resultDao import new_result
 from domain.dao.quizDao import all_quiz
 from domain.dao.exampleDao import count_example
-
 
 def analysis_service(result):
   #new 유저

@@ -1,3 +1,0 @@
-2023-09-12 15:29:53,031 - INFO - This is log's info
-2023-09-12 15:29:53,032 - WARNING - This is warning logging message
-2023-09-12 15:29:53,038 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

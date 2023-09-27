@@ -1,4 +1,4 @@
-# server
 __pycache__
 migrations
-secret.py
+config.py
+*.log
