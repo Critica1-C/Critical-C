@@ -11,7 +11,8 @@ import AboutPage from './pages/AboutPage';
 import UserInfoPage from './pages/UserInfoPage';
 import { useSelector } from 'react-redux';
 
- axios.defaults.baseURL = 'http://127.0.0.1:5000';
+ axios.defaults.baseURL = 'http://k8s-default-trashing-4e78abd8f1-934363084.us-east-2.elb.amazonaws.com';
+// axios.defaults.baseURL = 'http://localhost:5000';
 
 function App() {
   const userId= useSelector((state)=>state.user_id[0])

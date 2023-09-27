@@ -6,7 +6,7 @@ function WhichAction({user_id,user_name,history,tier}) {
     const [action,setAction] = useState(0);
 
     const kakaoBtnHandler = () => {
-        const jsKey = '8706cc8542570435c7534b00e8a43674'; // Kakao JavaScript Key
+        const jsKey = 'e527ddcb038e2b5fc03a6b82ada601f1'; // Kakao JavaScript Key
         if (!window.Kakao.isInitialized()) {
             window.Kakao.init(jsKey);
         }
