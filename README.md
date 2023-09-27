@@ -67,10 +67,16 @@ cd /backend/server && python app.py
 │ ├─resultService.py (결과 로직)
 │ ├─userRankService.py (유저랭크 로직)
 │ └─userService.py (유저 로직)
+├──templates (템플릿)
+│ └─index.html (health check)
 ├──app.py (실행)
 ├──config.py (비밀키)
-└──db_connect.py (데이터베이스)
+├──db_connect.py (데이터베이스)
+├──Kinesis.log (로그파일)
+└──log.py (logging 구현)
 ```
+──dockerfile (도커 image)
+──requirements (라이브러리 ver)
 
 ```
 ♻️ frontend
