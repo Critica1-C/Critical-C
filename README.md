@@ -10,18 +10,18 @@ COVID-19 이후 쓰레기 배출로 인한 환경 문제는 얼마나 심각할�
 
 ## 기술스택
 
-### 프론트엔드 기술스택
+<!-- ### 프론트엔드 기술스택
 
 <img src="https://img.shields.io/badge/-redux--toolkit-%23764ABC?style=for-the-badge&logo=redux&logoColor=black"/> <img src="https://img.shields.io/badge/-react%20-%2361DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/-react--router-%23CA4245?style=for-the-badge&logo=react-router&logoColor=black"/>
-<img src="https://img.shields.io/badge/-redux--persist-white?style=for-the-badge&logo=redux&logoColor=%23764ABC"/> <img src="https://img.shields.io/badge/-axios-%23764ABC?style=for-the-badge&logo=axios&logoColor=%23764ABC"/> <img src="https://img.shields.io/badge/-styled--components-%23DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>
+<img src="https://img.shields.io/badge/-redux--persist-white?style=for-the-badge&logo=redux&logoColor=%23764ABC"/> <img src="https://img.shields.io/badge/-axios-%23764ABC?style=for-the-badge&logo=axios&logoColor=%23764ABC"/> <img src="https://img.shields.io/badge/-styled--components-%23DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/> -->
 
 
 ### 백엔드 기술스택
 
-<img src="https://img.shields.io/badge/-Flask-black?style=for-the-badge&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/-Azure-%230078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white"/> <img src="https://img.shields.io/badge/-MSSQL-%23CC2927?style=for-the-badge&logo=Microsoft-SQL-Server&logoColor=white"/> <img src="https://img.shields.io/badge/-Nginx-%23009639?style=for-the-badge&logo=NGINX&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Flask-black?style=for-the-badge&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/-Azure-%230078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/-Nginx-%23009639?style=for-the-badge&logo=NGINX&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
 
 ### 클라우드 기술스택
-<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
+<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">  <img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"> <img src="https://img.shields.io/badge/amazonrds-326CE5?style=for-the-badge&logo=amazonrds&logoColor=white"> <img src="https://img.shields.io/badge/amazonroute53-8C4FFF?style=for-the-badge&logo=amazonroute53&logoColor=white"> <img src="https://img.shields.io/badge/amazonroute53-8C4FFF?style=for-the-badge&logo=amazonroute53&logoColor=white"> <img src="https://img.shields.io/badge/amazoneks-FF9900?style=for-the-badge&logo=amazoneks&logoColor=white"> <img src="https://img.shields.io/badge/amazonroute53-8C4FFF?style=for-the-badge&logo=amazonroute53&logoColor=white">
 
 
 
@@ -30,7 +30,8 @@ COVID-19 이후 쓰레기 배출로 인한 환경 문제는 얼마나 심각할�
 ### 웹애플리케이션
 
 ```
-cd frontend && yarn start
+cd /frontend && npm start
+cd /backend/server && python app.py
 ```
 
 ## 디렉토리 구조
@@ -149,13 +150,6 @@ cd frontend && yarn start
 
 </details>
 
-
-## See Also
-- [프로젝트 기획서](https://github.com/SSraeng/SSraeng_Project/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B8%B0%ED%9A%8D%EC%84%9C)
-- [와이어프레임](https://whimsical.com/elice-Ba4scYLvFB3ySKtkpj3Abd)
-- [Wiki](https://github.com/SSraeng/SSraeng_Project/wiki)
-
-
 ## Team
 
 ### Development
@@ -163,91 +157,55 @@ cd frontend && yarn start
 <table>
     <tr align="center">
         <td style="min-width: 175px;">
-            <a href="https://github.com/maeng93">
-              <img src="https://github.com/maeng93.png" width="100">
-              <br />
-              <b>서명현</b>
-            </a>
-        </td>
-        <td style="min-width: 175px;">
-            <a href="https://github.com/tea-hkim">
-              <img src="https://github.com/tea-hkim.png" width="100">
-              <br />
-              <b>김태호</b>
-            </a> 
-        </td>
-        <td style="min-width: 175px;">
-            <a href="https://github.com/Grapefruitgreentealoe">
-              <img src="https://github.com/Grapefruitgreentealoe.png" width="100">
-              <br />
-              <b>남궁은선</b>
-            </a>
-        </td>
-        <td style="min-width: 175px;">
-            <a href="https://github.com/Moon-Ji">
-              <img src="https://github.com/Moon-Ji.png" width="100">
-              <br />
-              <b>문지윤</b>
-            </a> 
-        </td>
-        <td style="min-width: 175px;">
             <a href="https://github.com/tbvjqkdlcm1">
               <img src="https://github.com/tbvjqkdlcm1.png" width="100">
               <br />
               <b>백승욱</b>
             </a> 
         </td>
-        <td style="min-width: 175px;">
-            <a href="https://github.com/Hee-Jae">
-              <img src="https://github.com/Hee-Jae.png" width="100">
-              <br />
-              <b>정희재</b>
-            </a> 
-        </td>
     </tr>
     <tr align="center" style="background-color:rgb(245, 245, 245)">
         <td>
-            사장님 👨‍✈️
-        </td>
-        <td>
-            🏥 환자들이여 저에게 모이세요 🏥
-        </td>
-        <td>
-            자몽그린티가 좋아요🍵💕
-        </td>
-        <td>
-            북끅곰 좋아!! 🐻‍❄️😍
-        </td>
-        <td>
-            하얀 마음을 가진 남자👨‍🦳
-        </td>
-        <td>
-            Try Try ~ Why Not ~?!🤷‍♂️
-        </td>
-    </tr>
-    <tr align="center">
-        <td>
-            PM & Data Analysis
-        </td>
-        <td>
-            Web FE & Data Analysis
-        </td>
-        <td>
-            Web FE
-        </td>
-        <td>
             Web BE & Data Analysis
-        </td>
-        <td>
-            Web BE & Data Analysis
-        </td>
-        <td>
-            Web BE & Web FE
         </td>
     </tr>
 </table>
 
-#### Thanks to
+### Cloud
 
-👨‍💻 [신주형](https://github.com/) : Web Development Coach  
-👩‍💻 [윤현영](https://github.com/) : Data Analysis Coach
+<table>
+    <tr align="center">
+        <td style="min-width: 175px;">
+            <a href="https://github.com/JWhy121">
+              <img src="https://avatars.githubusercontent.com/u/87068389?v=4" width="100">
+              <br />
+              <b>김연지</b>
+            </a> 
+        </td>
+        <td style="min-width: 175px;">
+            <a href="https://github.com/tbvjqkdlcm1">
+              <img src="https://avatars.githubusercontent.com/u/87068389?v=4" width="100">
+              <br />
+              <b>유재오</b>
+            </a> 
+        </td>
+        <td style="min-width: 175px;">
+            <a href="https://github.com/tbvjqkdlcm1">
+              <img src="https://avatars.githubusercontent.com/u/87068389?v=4" width="100">
+              <br />
+              <b>허수진</b>
+            </a> 
+        </td> 
+    </tr>
+    <tr align="center" style="background-color:rgb(245, 245, 245)">
+        <td>
+            cloud
+        </td>
+        <td>
+            cloud
+        </td>
+        <td>
+            cloud
+        </td>
+    </tr>
+</table>
