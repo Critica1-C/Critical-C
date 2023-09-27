@@ -104,7 +104,7 @@ cd /backend/server && python app.py
 └──package.json
 ```
 
-## 둘러보기
+## 상세 페이지
 
 <details>
 <summary>메인 페이지  </summary>
@@ -148,6 +148,10 @@ cd /backend/server && python app.py
 ![랭킹페이지](https://user-images.githubusercontent.com/75749574/138461837-abf77f77-f4ea-44f0-8aeb-6a0b208a78db.png)
 
 </details>
+
+## AWS Architecture
+![AWS Architecture](https://github.com/Critica1-C/Critical-C/assets/87068389/2af94848-0915-43ac-bdc6-368339decff5)
+
 
 ## Team
 
