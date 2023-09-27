@@ -20,6 +20,11 @@ COVID-19 이후 쓰레기 배출로 인한 환경 문제는 얼마나 심각할�
 
 <img src="https://img.shields.io/badge/-Flask-black?style=for-the-badge&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/-Azure-%230078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white"/> <img src="https://img.shields.io/badge/-MSSQL-%23CC2927?style=for-the-badge&logo=Microsoft-SQL-Server&logoColor=white"/> <img src="https://img.shields.io/badge/-Nginx-%23009639?style=for-the-badge&logo=NGINX&logoColor=white"/>
 
+### 클라우드 기술스택
+<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
+
+
+
 ## Getting Started
 
 ### 웹애플리케이션
