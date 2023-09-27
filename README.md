@@ -12,7 +12,7 @@ COVID-19 이후 쓰레기 배출로 인한 환경 문제는 얼마나 심각할�
 
 <!-- ### 프론트엔드 기술스택
 
-<img src="https://img.shields.io/badge/-redux--toolkit-%23764ABC?style=for-the-badge&logo=redux&logoColor=black"/> <img src="https://img.shields.io/badge/-react%20-%2361DAFB?style=for-the-badge&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/-react--router-%23CA4245?style=for-the-badge&logo=react-router&logoColor=black"/>
+<img src="https://img.shields.io/badge/-redux--toolkit-%23764ABC?style=for-the-badge&logo=redux&logoColor=black"/> <img src="https://img.shields.io/badge/-react--router-%23CA4245?style=for-the-badge&logo=react-router&logoColor=black"/>
 <img src="https://img.shields.io/badge/-redux--persist-white?style=for-the-badge&logo=redux&logoColor=%23764ABC"/> <img src="https://img.shields.io/badge/-axios-%23764ABC?style=for-the-badge&logo=axios&logoColor=%23764ABC"/> <img src="https://img.shields.io/badge/-styled--components-%23DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/> -->
 
 
