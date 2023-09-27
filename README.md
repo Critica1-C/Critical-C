@@ -74,9 +74,9 @@ cd /backend/server && python app.py
 ├──db_connect.py (데이터베이스)
 ├──Kinesis.log (로그파일)
 └──log.py (logging 구현)
-```
 ──dockerfile (도커 image)
 ──requirements (라이브러리 ver)
+```
 
 ```
 ♻️ frontend
