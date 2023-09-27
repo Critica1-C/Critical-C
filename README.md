@@ -169,7 +169,7 @@ cd /backend/server && python app.py
     </tr>
     <tr align="center" style="background-color:rgb(245, 245, 245)">
         <td>
-            Web BE & Data Analysis
+            Web BE & Cloud
         </td>
     </tr>
 </table>
