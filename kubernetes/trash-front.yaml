@@ -1,0 +1,97 @@
+#frontend 도메인 연결해서 외부 접속 가능(trashsupply.net)
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trash-front
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  minReadySeconds: 20
+  replicas: 2
+  selector:
+    matchLabels:
+      app: trash-front
+      tier: front
+  template:
+    metadata:
+      labels:
+        app: trash-front
+        tier: front
+    spec:
+      containers:
+        - name: trash-front
+          image: tbvjqkdlcm1/nf:v22
+          ports:
+            - containerPort: 3000
+      affinity:
+        podAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 90
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: tier
+                      operator: In
+                      values:
+                        - back
+                topologyKey: "kubernetes.io/hostname"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trash-front-svc
+  labels:
+    app: trash-front
+    tier: front
+spec:
+  type: NodePort # 서비스 타입
+  ports:
+    - port: 80 # 서비스 포트
+      targetPort: 3000 # 타켓, 즉 pod의 포트
+      protocol: TCP
+  selector:
+    app: trash-front
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: trash-front-ing
+  annotations:
+    #kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    #alb.ingress.kubernetes.io/scheme: internal
+    alb.ingress.kubernetes.io/target-type: instance
+    #alb.ingress.kubernetes.io/target-type: ip
+    external-dns.alpha.kubernetes.io/hostname: trashsupply.net
+    ## 퍼블릭 서브넷(az 안겹치게)으로 계속 변경
+    alb.ingress.kubernetes.io/subnets: subnet-00ba0b63f31e1064e, subnet-022258de0e45627f7, subnet-0b338c13da0ebf7b4
+    alb.ingress.kubernetes.io/backend-protocol: "HTTP"
+    external-dns.alpha.kubernetes.io/ttl: "100"
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:323385436194:certificate/f41c6181-3945-443b-82d3-04fc85437748
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+spec:
+  tls:
+    - hosts:
+        - trashsupply.net
+  ingressClassName: alb
+  defaultBackend:
+    service:
+      name: trash-front-svc
+      port:
+        number: 80
+  rules:
+    - host: trashsupply.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: trash-front-svc
+                port:
+                  number: 80
